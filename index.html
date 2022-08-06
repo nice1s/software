@@ -17,13 +17,15 @@
       <div class="header0">
          <header id="header">
             <nav class="main-nav">
-               <input type="checkbox" id="check" />
-               <label for="check" class="menu-btn toggle"">
+               <div class="menu-btn" id="toggle">
                <i class="fas fa-bars"></i>
-               </label>
+               </div>
                <a href="index.html" class="logo"><span>Nice1s</span>.Software</a>
-               <div class="navlinks menu" id="navlinks">
-                  <li><a href="#" oncligcontact" onclick="click()">Liên hệ</a></li>
+               <div class="navlinks" id="navlinks">
+                  <li><a href="#" class="myli1">Trang chủ</a></li>
+                  <li><a href="#du-an" class="myli2">Dự án</a></li>
+                  <li><a href="#gioi-thieu" class="myli3">Giới thiệu</a></li>
+                  <li><a href="#" class="contact myli4">Liên hệ</a></li>
                </div>
             </nav>
          </header>
@@ -189,5 +191,29 @@
             </div>
          </footer>
       </div>
+      <script>
+            const toggle = document.getElementById('toggle');
+            const navlinks = document.getElementById('navlinks');
+            const myli1 = document.querySelector(".myli1");
+            const myli2 = document.querySelector(".myli2");
+            const myli3 = document.querySelector(".myli3");
+            const myli4 = document.querySelector(".myli4");
+            myli1.onclick = function () {
+               navlinks.classList.remove("active");
+            }
+            myli2.onclick = function () {
+               navlinks.classList.remove("active");
+            }
+            myli3.onclick = function () {
+               navlinks.classList.remove("active");
+            }
+            myli4.onclick = function () {
+               navlinks.classList.remove("active");
+            }
+            toggle.onclick = function () {
+               toggle.classList.toggle("active");
+               navlinks.classList.toggle("active");
+            }
+      </script>
    </body>
 </html>
