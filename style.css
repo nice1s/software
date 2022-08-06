@@ -28,9 +28,6 @@ font-family: "AstroSpace", sans-serif;
 .logo span {
 color: #5271FF;
 }
-#check {
-display: none;
-}
 .navlinks {
 list-style: none;
 float: right;
@@ -99,9 +96,11 @@ color: white;
 .menu-btn {
 display: block;
 }
-#check:checked ~ .navlinks {
-right: 0;
+
+#navlinks.active{
+right: 0px;
 }
+
 }
 @media (max-width: 360px) {
 .logo {
