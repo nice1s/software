@@ -422,22 +422,15 @@ background-color: white;
 }
 .copyright-text
 {
-margin:0;
-}
-@media (max-width:991px)
-{
-.site-footer [class^=col-]
-{
-margin-bottom:25px;
-}
+margin: 0;
 }
 @media (max-width:767px)
 {
 .site-footer
 {
-padding-bottom:0
+padding-bottom:15px;
 }
-.site-footer .copyright-text,.site-footer .social-icons
+.site-footer .social-icons
 {
 text-align:right;
 }
@@ -528,7 +521,7 @@ display: grid;
 place-items: center;
 margin-left: 13%;
 }
-.row {
+.ngonngu .row {
 display: flex;
 flex-wrap: wrap;
 }
